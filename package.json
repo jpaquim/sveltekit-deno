@@ -12,5 +12,10 @@
     "typescript": "^4.9.3",
     "vite": "^4.0.0"
   },
-  "type": "module"
+  "type": "module",
+  "pnpm": {
+    "patchedDependencies": {
+      "@sveltejs/kit@1.0.1": "patches/@sveltejs__kit@1.0.1.patch"
+    }
+  }
 }

@@ -1,0 +1,13 @@
+diff --git a/src/exports/vite/dev/index.js b/src/exports/vite/dev/index.js
+index 545af8d1f464c87228cbf9af44bed961bd4731cc..18235b0cd6ad4041e3f4bd9754b3208eed1be1fa 100644
+--- a/src/exports/vite/dev/index.js
++++ b/src/exports/vite/dev/index.js
+@@ -24,7 +24,7 @@ const cwd = process.cwd();
+  * @return {Promise<Promise<() => void>>}
+  */
+ export async function dev(vite, vite_config, svelte_config) {
+-	installPolyfills();
++	// installPolyfills();
+ 
+ 	sync.init(svelte_config, vite_config.mode);
+ 
