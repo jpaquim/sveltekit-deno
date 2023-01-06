@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { confetti } from '@neoconfetti/svelte';
+	// import { confetti } from 'npm:@neoconfetti/svelte';
 	import { enhance } from '$app/forms';
 	import type { PageData, ActionData } from './$types';
-	import { reduced_motion } from './reduced-motion';
+	// import { reduced_motion } from './reduced-motion';
 
 	export let data: PageData;
 
@@ -180,16 +180,14 @@
 </form>
 
 {#if won}
-	<div
-		style="position: absolute; left: 50%; top: 30%"
-		use:confetti={{
-			particleCount: $reduced_motion ? 0 : undefined,
-			force: 0.7,
-			stageWidth: window.innerWidth,
-			stageHeight: window.innerHeight,
-			colors: ['#ff3e00', '#40b3ff', '#676778']
-		}}
-	/>
+	<div style="position: absolute; left: 50%; top: 30%" />
+	<!-- use:confetti={{
+		particleCount: $reduced_motion ? 0 : undefined,
+		force: 0.7,
+		stageWidth: window.innerWidth,
+		stageHeight: window.innerHeight,
+		colors: ['#ff3e00', '#40b3ff', '#676778']
+	}} -->
 {/if}
 
 <style>

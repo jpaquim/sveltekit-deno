@@ -1,4 +1,5 @@
-import adapter from 'npm:@sveltejs/adapter-auto';
+// import adapter from 'npm:@sveltejs/adapter-auto';
+import adapter from 'npm:svelte-adapter-deno';
 import { vitePreprocess } from 'npm:@sveltejs/kit/vite';
 
 /** @type {import('@sveltejs/kit').Config} */
